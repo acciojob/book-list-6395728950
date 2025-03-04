@@ -1,5 +1,5 @@
 //your JS code here. If required.
-document.getElementById("btn").addEventListener("click",function(){
+document.getElementById("submit").addEventListener("click",function(){
 	const t1 = document.getElementById("title").value.trim();
 	const a1 = document.getElementById("author").value.trim();
 	const i1 = document.getElementById("isbn").value.trim();
@@ -8,21 +8,18 @@ document.getElementById("btn").addEventListener("click",function(){
 		return ;
 	}
 
-	const tablebody = document.querySelector("table tbody");
-	cosnt newrow = document.createElement(tr);
-	const first  = document.createElement(td);
-	const second  = document.createElement(td);
-	const last  = document.createElement(td);
+	const tablebody = document.getElementsByClassName("table tbody")[0];
+	const newRow = tablebody.insertRow();
+	tablebody.appendChild(newRow);
+	 
+	let first=newRow.insertCell(0);
+	let second=newRow.insertCell(1);
+	let last=newRow.insertCell(2);
 	first.textContent = t1;
 	second.textContent = a1;
 	last.textContent = i1;
-	newrow.appendChild(first);
-	newrow.appendChild(second);
-	newrow.appendChild(last);
+ 
 
-	tablebody.appendChild(newrow);
-	// t1.textContent.value="";
-	// a1.textContent.value="";
-	// i1.textContent.value="";
+ 
 	
 });
