@@ -1,19 +1,78 @@
 /*  your css code here. If applicable */
-.form-group{
-	display:flex;
-	flex-direction:column;
-	gap:2px;
-	margin-bottom:20px;
+ 
+/* Style for the book form */
+#book-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Increased spacing for better readability */
+    margin-bottom: 20px;
+    max-width: 400px; /* Limiting width for better layout */
 }
-.btn{
-	width:80px;
-	background:lightskyblue;
-	border-radius:4px;
-	border-color:lightblue;
+
+/* Style for input fields */
+#book-form input {
+    padding: 8px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    font-size: 14px;
 }
-.btn:hover{
-	border-color:blue;
+
+/* Style for buttons */
+.btn {
+    width: 100px;
+    padding: 6px;
+    background: lightskyblue;
+    border-radius: 4px;
+    border: 1px solid lightblue;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
 }
-#book-list{
+
+.btn:hover {
+    background: dodgerblue;
+    border-color: blue;
+    color: white;
+}
+
+/* Table Styling */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table tr {
+    /* border: 1px solid lightgray; */
+    padding: 10px;
+    text-align: left;
 	border-bottom:1px solid lightgray;
+}
+
+/* .table th {
+    background: #f0f0f0;
+    font-weight: bold;
+} */
+
+/* Style for book list table */
+#book-list {
+    /* border-bottom: 1px solid lightgray; */
+	 background: #f0f0f0;
+    font-weight: bold;
+	
+}
+
+/* Delete Button */
+.delete {
+    background: crimson;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.delete:hover {
+    background: darkred;
 }

@@ -10,32 +10,32 @@
 	<!-- the entire body must be written by student -->
 	<h1>MyBookList</h1>
 	<div class="form-group">
-		<form class="form-group">
-			<label for="title">Title</label>
-			 
-			<input id="title"></input>
-			 
-			<label for="author">Author</label>
-			<input id="author"></input>
-			<label for="isbn">ISBN#</label>
-			<input id="isbn"></input>
-			<button class="btn" id="submit">Add Book</button>
-		
-		</form>
+	 <form id="book-form">
+            <label for="title">Title</label>
+            <input type="text" id="title" required>
 
-		<table id="book-list">
-			<thead>
-				<tr>
-					<th>Title</th>
-					<th>Author</th>
-					<th>ISBN#</th>
-				</tr>
-			</thead>
- 
-			<tbody  class="table">
-				
-			</tbody>
-		</table>
+            <label for="author">Author</label>
+            <input type="text" id="author" required>
+
+            <label for="isbn">ISBN#</label>
+            <input type="text" id="isbn" required>
+
+            <button type="submit" class="btn" id="submit">Add Book</button>
+        </form>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN#</th>
+                    
+                </tr>
+            </thead>
+            <tbody id="book-list">
+                <!-- Book rows will be added here -->
+            </tbody>
+        </table>
 	</div>
  
     <script type="text/javascript" src="./script.js">
